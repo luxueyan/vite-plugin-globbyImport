@@ -1,4 +1,4 @@
-# vite-plugin-globbyImport ⚡
+# vite-plugin-globby-import ⚡
 
 [![npm][npm-img]][npm-url]
 [![node][node-img]][node-url]
@@ -14,7 +14,7 @@ In rc.1 and will likely release 1.0 soon.
 
 ### Install (yarn or npm)
 
-`yarn add vite-plugin-globbyImport` or `npm i vite-plugin-globbyImport`
+`yarn add vite-plugin-globby-import` or `npm i vite-plugin-globby-import`
 
 ### Usage
 
@@ -24,7 +24,7 @@ module.exports = {
   alias: {
     '/@/': path.resolve(__dirname, 'src'),
   },
-  configureServer: [require('vite-plugin-globbyImport')],
+  configureServer: [require('vite-plugin-globby-import')],
 }
 ```
 
@@ -53,7 +53,7 @@ import imgs from '/@/assets/image/**/*.@(jpg|png)'
 MIT
 
 [npm-img]: https://img.shields.io/badge/npm-v1.0.0--rc.1-green.svg
-[npm-url]: https://npmjs.com/package/vite-plugin-globbyImport
+[npm-url]: https://npmjs.com/package/vite-plugin-globby-import
 [node-img]: https://img.shields.io/node/v/vite.svg
 [node-url]: https://nodejs.org/en/about/releases/
 <!-- [unix-ci-img]: https://circleci.com/gh/vitejs/vite.svg?style=shield

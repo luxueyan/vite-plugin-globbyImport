@@ -20,7 +20,7 @@ const globbyImport: ServerPlugin = function ({
 
     if (fileContent) {
       fileContent = fileContent.replace(
-        /import (\w+) from (['"])([^'"]+\*+[^'"]+)\2/g,
+        /import\s+(\w+)\s+from\s+(['"])([^'"]+\*+[^'"]+)\2/g,
         (_, g1, g2, g3) => {
           const resolvedFilePath = g3.startsWith('.')
             ? resolver.resolveRelativeRequest(filePath, g3)
