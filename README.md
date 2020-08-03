@@ -24,7 +24,7 @@ module.exports = {
   alias: {
     '/@/': path.resolve(__dirname, 'src'),
   },
-  configureServer: [require('vite-plugin-globbyimport')],
+  configureServer: [require('vite-plugin-globbyImport')],
 }
 ```
 
@@ -32,7 +32,7 @@ Example import expressions:
 ```ts
 import routes from '../pages/**/route.ts'
 import imgs from '/@/assets/image/**/*.@(jpg|png)'
-// These will be replaced 
+// These will be replaced to:
 /* 
  * import routes0 from '/@/pages/route.ts'
  * import routes1 from '/@/pages/demo/route.ts'
@@ -52,11 +52,11 @@ import imgs from '/@/assets/image/**/*.@(jpg|png)'
 
 MIT
 
-[npm-img]: https://img.shields.io/npm/v/vite.svg
-[npm-url]: https://npmjs.com/package/vite
+[npm-img]: https://img.shields.io/badge/npm-v1.0.0--rc.1-green.svg
+[npm-url]: https://npmjs.com/package/vite-plugin-globbyImport
 [node-img]: https://img.shields.io/node/v/vite.svg
 [node-url]: https://nodejs.org/en/about/releases/
-[unix-ci-img]: https://circleci.com/gh/vitejs/vite.svg?style=shield
+<!-- [unix-ci-img]: https://circleci.com/gh/vitejs/vite.svg?style=shield
 [unix-ci-url]: https://app.circleci.com/pipelines/github/vitejs/vite
 [windows-ci-img]: https://ci.appveyor.com/api/projects/status/0q4j8062olbcs71l/branch/master?svg=true
-[windows-ci-url]: https://ci.appveyor.com/project/yyx990803/vite/branch/master
+[windows-ci-url]: https://ci.appveyor.com/project/yyx990803/vite/branch/master -->
